@@ -3,7 +3,7 @@
 **Discover India Like Never Before** - An intelligent travel companion that crafts personalized itineraries using advanced AI technology. Simply describe your dream vacation, and our system generates detailed day-by-day plans complete with attractions, local cuisine recommendations, safety guidance, and interactive maps. Whether you're planning a spiritual journey through Rajasthan, exploring Kerala's backwaters, or discovering Mumbai's vibrant street life, the AI Travel Planner transforms your travel dreams into actionable, well-structured adventures.
 
 <p>
-   <img src="https://raw.githubusercontent.com/MVH31/guvi_travel_planner/refs/heads/main/frontend/public/logo.svg" width="50" height="50"/>
+   <img src="https://raw.githubusercontent.com/MVH31/guvi_travel_planner/refs/heads/main/frontend/public/logo.svg" />
 </p>
 
 ## ✨ Core Features
