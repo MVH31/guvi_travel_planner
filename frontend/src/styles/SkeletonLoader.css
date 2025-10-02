@@ -1,0 +1,254 @@
+/* SkeletonLoader Styles */
+.skeleton-loader {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Base skeleton styles */
+.skeleton-base {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+  border-radius: 4px;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Map Skeleton - Large rectangle */
+.skeleton-map {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+  width: 100%;
+  height: 300px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+/* Title Skeleton - Bar */
+.skeleton-title {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+  width: 60%;
+  height: 32px;
+  border-radius: 4px;
+  margin: 0 auto 15px auto;
+}
+
+/* Summary Skeleton - Smaller bar */
+.skeleton-summary {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+  width: 80%;
+  height: 20px;
+  border-radius: 4px;
+  margin: 0 auto 40px auto;
+}
+
+/* Daily Plan Container */
+.skeleton-daily-plan {
+  display: grid;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+/* Day Card Skeleton */
+.skeleton-day-card {
+  border: 2px solid #f0f0f0;
+  border-radius: 12px;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Day Header */
+.skeleton-day-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.skeleton-day-number {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.skeleton-city-name {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+  width: 120px;
+  height: 24px;
+  border-radius: 4px;
+}
+
+/* Activities */
+.skeleton-activities {
+  margin-bottom: 20px;
+}
+
+.skeleton-activity {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+  width: 100%;
+  height: 16px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.skeleton-activity.short {
+  width: 70%;
+}
+
+/* Action Buttons */
+.skeleton-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.skeleton-button {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+  width: 100px;
+  height: 36px;
+  border-radius: 6px;
+}
+
+/* Safety Info Skeleton */
+.skeleton-safety {
+  border: 2px solid #f0f0f0;
+  border-radius: 12px;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skeleton-safety-title {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+  width: 150px;
+  height: 24px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.skeleton-safety-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.skeleton-safety-item {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+  width: 100%;
+  height: 16px;
+  border-radius: 4px;
+}
+
+.skeleton-safety-item.short {
+  width: 60%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .skeleton-loader {
+    padding: 15px;
+  }
+
+  .skeleton-map {
+    height: 250px;
+    margin-bottom: 20px;
+  }
+
+  .skeleton-title {
+    width: 80%;
+    height: 28px;
+  }
+
+  .skeleton-summary {
+    width: 90%;
+    height: 18px;
+  }
+
+  .skeleton-day-card {
+    padding: 15px;
+  }
+
+  .skeleton-day-number {
+    width: 40px;
+    height: 40px;
+  }
+
+  .skeleton-city-name {
+    width: 100px;
+    height: 20px;
+  }
+
+  .skeleton-actions {
+    flex-direction: column;
+  }
+
+  .skeleton-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .skeleton-loader {
+    padding: 10px;
+  }
+
+  .skeleton-map {
+    height: 200px;
+  }
+
+  .skeleton-title {
+    width: 95%;
+    height: 24px;
+  }
+
+  .skeleton-summary {
+    width: 100%;
+    height: 16px;
+  }
+
+  .skeleton-day-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .skeleton-city-name {
+    width: 80px;
+  }
+}
